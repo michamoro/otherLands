@@ -16,10 +16,10 @@
                     HorizontalOptions="Center"
                     Text="otherLands">
                 </Label>-->
-                <Image
+                <!--<Image
                     Source="l"
                     WidthRequest="150">
-                </Image>
+                </Image>-->
                 <Grid
                     Margin="10,0"
                     VerticalOptions="CenterAndExpand">
@@ -88,17 +88,19 @@
                         Text="Login"
                         TextColor="White"
                         VerticalOptions="CenterAndExpand"
-                        Command="{Binding LoginCommand}">
+                        Command="{Binding LoginCommand}"
+                        IsEnabled="{Binding IsEnabled, Mode=TwoWay}">
                     </Button>
                     <Button
                         BackgroundColor="Red"
                         BorderRadius="24"
                         HorizontalOptions="FillAndExpand"
                         Text="Register"
-                        TextColor="White">
+                        TextColor="White"
+                        IsEnabled="{Binding IsEnabled, Mode=TwoWay}">
                     </Button>
                 </StackLayout>
-                <StackLayout
+                <!--<StackLayout
                     Orientation="Horizontal"
                     HorizontalOptions="Center"
                     VerticalOptions="EndAndExpand">
@@ -114,7 +116,7 @@
                         Source="wii"
                         WidthRequest="50">
                     </Image>
-                </StackLayout>
+                </StackLayout>-->
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
