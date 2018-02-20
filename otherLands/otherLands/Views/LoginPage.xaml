@@ -1,12 +1,101 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="otherLands.Views.LoginPage">
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"    
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"        
+    x:Class="otherLands.Views.LoginPage"
+    BindingContext="{Binding Main, Source={StaticResource Locator}}"
+    Title="Login">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout
+                Padding="10,10">
+                <Label 
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                    HorizontalOptions="Center"
+                    Text="otherLands">
+                </Label>
+                <Image
+                    Source="l"
+                    WidthRequest="150">
+                </Image>
+                <Grid
+                    Margin="10,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Text="Email"
+                        VerticalOptions="Center">
+                    </Label>
+                    <Entry
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Keyboard="Email"
+                        Placeholder="Enter your Email">
+                    </Entry>
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Text="Password"
+                        VerticalOptions="Center">
+                    </Label>
+                    <Entry
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        IsPassword="True"
+                        Placeholder="Enter your Password">
+                    </Entry>
+                </Grid>
+                <StackLayout
+                    Padding="10,0"
+                    Orientation="Horizontal">
+                    <Label
+                        HorizontalOptions="StartAndExpand"
+                        Text="Remember me pls"
+                        VerticalOptions="Center">
+                    </Label>
+                    <Switch
+                        HorizontalOptions="End">
+                    </Switch>
+                </StackLayout>
+                <ActivityIndicator>
+                </ActivityIndicator>
+                <StackLayout
+                    Margin="50,0">
+                    <Button
+                        BackgroundColor="Blue"
+                        BorderRadius="24"
+                        Text="Login"
+                        TextColor="White">
+                    </Button>
+                    <Button
+                        BackgroundColor="Red"
+                        BorderRadius="24"
+                        Text="Register"
+                        TextColor="White">
+                    </Button>
+                </StackLayout>
+                <StackLayout
+                    Orientation="Horizontal"
+                    HorizontalOptions="Center">
+                    <Image
+                        Source="ps4"
+                        WidthRequest="50">
+                    </Image>
+                    <Image
+                        Source="xbox"
+                        WidthRequest="50">
+                    </Image>
+                    <Image
+                        Source="wii"
+                        WidthRequest="50">
+                    </Image>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

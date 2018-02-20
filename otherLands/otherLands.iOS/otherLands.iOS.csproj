@@ -128,4 +128,16 @@
       <Name>otherLands</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ps4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\wii.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\l.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\xbox.png" />
+  </ItemGroup>
 </Project>
