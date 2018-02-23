@@ -100,13 +100,17 @@
                         IsEnabled="{Binding IsEnabled, Mode=TwoWay}">
                     </Button>
                 </StackLayout>
-                <!--<StackLayout
+                <StackLayout
                     Orientation="Horizontal"
                     HorizontalOptions="Center"
                     VerticalOptions="EndAndExpand">
                     <Image
                         Source="ps4"
                         WidthRequest="50">
+                        <!--Gesture Recognizer-->
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding LoginFacebookCommand}"/>
+                        </Image.GestureRecognizers>
                     </Image>
                     <Image
                         Source="xbox"
@@ -116,7 +120,7 @@
                         Source="wii"
                         WidthRequest="50">
                     </Image>
-                </StackLayout>-->
+                </StackLayout>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
