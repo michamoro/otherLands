@@ -129,18 +129,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\ps4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\wii.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\l.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\xbox.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\ic_chevron_right.png" />
   </ItemGroup>
   <ItemGroup>
@@ -157,5 +145,17 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\ic_action_translate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\login_android.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\login_curse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\main_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\login_boy.png" />
   </ItemGroup>
 </Project>

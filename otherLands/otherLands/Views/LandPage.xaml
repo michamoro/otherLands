@@ -10,7 +10,7 @@
         <ScrollView
             BindingContext="{Binding Land}">
             <StackLayout
-                Padding="2">
+                Padding="10">
                 <Label
                     FontSize="Large"
                     FontAttributes="Bold"

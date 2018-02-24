@@ -9,7 +9,7 @@
         <StackLayout
             BindingContext="{Binding Lands}">
             <SearchBar
-                HeightRequest="20"
+                HeightRequest="30"
                 Placeholder="Search..."
                 Text="{Binding Filter, Mode=TwoWay}"
                 SearchCommand="{Binding SearchCommand}">
