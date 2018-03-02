@@ -60,8 +60,8 @@
             this.IsRemembered = true;
             this.IsEnabled = true;
 
-            //this.Email = "michaelmoncada205787@correo.itm.edu.co";
-            //this.Password = "123456";
+            this.Email = "michaelmoncada205787@correo.itm.edu.co";
+            this.Password = "123456";
         }
         #endregion
 
