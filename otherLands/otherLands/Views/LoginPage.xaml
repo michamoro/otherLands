@@ -4,7 +4,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"        
     x:Class="otherLands.Views.LoginPage"
     BindingContext="{Binding Main, Source={StaticResource Locator}}"
-    Title="Login">
+    Title="Login"
+    xmlns:i18n="clr-namespace:otherLands.Helpers">
     <ContentPage.Content>
         <ScrollView
             BindingContext="{Binding Login}">
@@ -19,7 +20,7 @@
                     Grid.Column="1"
                     Keyboard="Email"
                     Text="{Binding Email, Mode=TwoWay}"
-                    Placeholder="Email"
+                    Placeholder="{i18n:Translate EmailPlaceHolder}"
                     FontSize="Small">
                 </Entry>
                 <Entry
@@ -40,7 +41,7 @@
                     VerticalOptions="CenterAndExpand">
                     <Label
                         HorizontalOptions="StartAndExpand"
-                        Text="Remember me pls"
+                        Text="{i18n:Translate Rememberme}"
                         VerticalOptions="Center">
                     </Label>
                     <Switch
