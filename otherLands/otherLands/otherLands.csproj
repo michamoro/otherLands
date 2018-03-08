@@ -8,7 +8,16 @@
     <PackageReference Include="MvvmLightLibs" Version="5.3.0" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
     <PackageReference Include="Xam.Plugin.Connectivity" Version="3.1.1" />
+    <PackageReference Include="Xamarin.FFImageLoading" Version="2.3.4" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.3.4" />
+    <PackageReference Include="Xamarin.FFImageLoading.Svg" Version="2.3.4" />
+    <PackageReference Include="Xamarin.FFImageLoading.Svg.Forms" Version="2.3.4" />
+    <PackageReference Include="Xamarin.FFImageLoading.Transformations" Version="2.3.4" />
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.122203" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\otherLands.Domain\otherLands.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,6 +30,13 @@
   </ItemGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
+    <EmbeddedResource Update="Resources\Resource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+=======
+>>>>>>> parent of 5b28b42... Multi Language
     <EmbeddedResource Update="Views\BordersPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

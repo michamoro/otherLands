@@ -9,7 +9,7 @@
     <ContentPage.Content>
         <StackLayout
             BindingContext="{Binding Land}"
-            Padding="5">
+            Padding="10">
             <Label
                 FontSize="Large"
                 FontAttributes="Bold"

@@ -119,6 +119,21 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Xamarin.FFImageLoading">
+      <Version>2.3.4</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.FFImageLoading.Forms">
+      <Version>2.3.4</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.FFImageLoading.Svg">
+      <Version>2.3.4</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.FFImageLoading.Svg.Forms">
+      <Version>2.3.4</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.FFImageLoading.Transformations">
+      <Version>2.3.4</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.122203" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
@@ -127,18 +142,6 @@
       <Project>{34CD700A-745E-4170-8250-79412D75C93A}</Project>
       <Name>otherLands</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\ps4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\wii.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\l.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\xbox.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\ic_chevron_right.png" />
@@ -157,5 +160,17 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\ic_action_translate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\login_android.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\login_curse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\main_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\login_boy.png" />
   </ItemGroup>
 </Project>
