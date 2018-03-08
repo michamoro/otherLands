@@ -80,18 +80,18 @@
            if(string.IsNullOrEmpty(this.Email))
             {
                 await Application.Current.MainPage.DisplayAlert(
-                    "Error", 
-                    "You must enter an Email", 
-                    "Accept");
+                    Languages.Error,
+                    Languages.EmailValidation,
+                    Languages.Accept);
                 return;
             }
 
             if (string.IsNullOrEmpty(this.Password))
             {
                 await Application.Current.MainPage.DisplayAlert(
-                    Languages.Error,
-                    Languages.EmailValidation,
-                    Languages.Accept);
+                    "Error",
+                    "You must enter an Email",
+                    "Accept");
                 return;
             }
 
